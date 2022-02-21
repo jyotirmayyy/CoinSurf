@@ -6,6 +6,7 @@ CoinSurf is a frontend project made purely using HTML and Sass.
 This webpage is responsive, aesthetic, follows latest design trends and consists of soothing animations  (also for microinteractions).
 ## Link
 
+https://jyotirmayyy.github.io/CoinSurf/
 
 ## Authors
 
