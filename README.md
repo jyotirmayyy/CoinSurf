@@ -3,7 +3,7 @@
 
 CoinSurf is a frontend project made purely using HTML and Sass.
 
-This webpage is responsive, aesthetic, follows latest design trends and consists of soothing animations  (also for microinteractions).
+This webpage is responsive, aesthetic, follows the latest design trends, and consists of soothing animations (also for micro-interactions).
 
 I've used blue colored theme as it represents stability, trust, and serenity which is ideal for financial page.
 I've also used Poppins for the text, which is a geometric typeface considered as a highly readble font.
