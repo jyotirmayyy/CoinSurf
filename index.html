@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Required Meta Tags   -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Jyotirmay Patel">
+    <meta name="description" content="CoinSurf | Buy and Sell Cryptocurrencies and NFTs">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0 ">
+
+    <!-- Title -->
+    <title>CoinSurf | Buy and Sell Cryptocurrencies and NFTs</title>
+    <base>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="images/favicon.ico"> 
+    <!-- type="image/icon"  href="xyz/img.ico"-->
+
+    <!-- CSS Stylesheets -->
+    <!-- The Stylesheet at the last overrides the top ones -->
+    <link rel="stylesheet" type="text/css" href="sass/style.css"> <!-- Sass compiled CSS file -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/eff153cf0f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!--
+    BEM: component-based approach to web development; idea behind BEM is to divide the user-interface into independent blocks 
+-->
+
+<body>
+
+
+
+    <!-- NAVIGATION BAR -->
+    <div class="nav-bg">
+        <div class="row">
+
+            <nav class="navigation">
+
+                <!-- Using BEM classes naming methodology -->
+                <div class="navigation__brand-box">
+                    <h1 translate="no">
+                        <a class="navigation__brand-logo" href="./index.html">CoinSurf</a>
+                    </h1>
+                </div> <!-- translate="no" -->
+
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="btn navigation__link" href="#footer">About Us</a>
+                    </li>
+                    <li class="navigation__item">
+                        <button class="btn navigation__link">Trade</button>
+                        <div class="dropdown-menu">
+                            <a class="btn navigation__link" href="#">Buy & Sell</a>
+                            <a class="btn navigation__link" href="#">Wallet</a>
+                            <a class="btn navigation__link" href="#">NFTs</a>
+                        </div>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="btn navigation__link" href="#footer">Support</a>
+                    </li>
+                </ul>
+
+                <div class="button-box">
+                <!-- Independent component: button-box -->
+                    <div class="button-box__sign-in">
+                        <button class="btn btn--button btn--light-blue button-box__login-button" href="#">Login</button>
+                        <button class="btn btn--button btn--blue button-box__signup-button" href="#">Sign Up</button>
+                        <!-- .btn--button is for animation, .btn--blue and .btn--light-blue is for colors AND .button-box__login-button/signup-button is for padding-->
+                    </div>
+                </div>
+
+            </nav>
+            <!-- <nav> & <li> is a block-level element -->
+
+        </div>
+    </div>
+
+
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="row">
+
+            <div class="column-1-of-2">
+                <div class="header-content">
+
+                    <h1 class="heading-primary">
+                        <span class="heading-primary--main">
+                        <!-- Modifier-->
+                            Start your
+                            <span class="colored-text">Crypto</span>
+                            Journey with
+                            <span class="colored-text" translate="no">CoinSurf</span>
+                        </span>
+                        <span class="heading-primary--sub">
+                        <!-- Modifier-->
+                            The most trusted platform to Buy, Sell and Trade Cryptocurrencies and NFTs. Sign Up and get started
+                            today!
+                        </span>
+                    </h1>
+                    <div class="form-box">
+                    <!-- Independent component inside buttons.scss -->
+                        <form class="form" action="./index.html" method="post">
+                            <input class="btn form__input" type="email" placeholder="Enter your Email" required>
+                            <button class="btn btn--button btn--blue form__button" type="submit">Get Started</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column-1-of-2">
+                <div class="graphic-box">
+
+                    <img class="graphic-box__dimension graphic-box__dimension--litecoin-sticker"
+                        src="https://media0.giphy.com/media/4q7wZEkrCkE5BocS17/giphy.gif?cid=ecf05e47qnd604ghzbk18byiakmx855ppb0r9b227vf6qg86&rid=giphy.gif&ct=s"
+                        alt="litecoin animated sticker">
+                    <img class="graphic-box__dimension graphic-box__dimension--bitcoin-sticker"
+                        src="https://media1.giphy.com/media/dt1GOk4LEoZRfE4AqW/giphy.gif?cid=790b761189801165f70ef680f625673780216ebfee7afb14&rid=giphy.gif&ct=s"
+                        alt="bitcoin animated sticker">
+                    <img class="graphic-box__dimension graphic-box__dimension--xrp-sticker"
+                        src="https://media1.giphy.com/media/F0SAcNMeGIOsKDVfih/giphy.gif?cid=790b76111eb7aa8f624c17aebcf23426e42687794d85249e&rid=giphy.gif&ct=s"
+                        alt="xrp animated sticker">
+                    <img class="graphic-box__dimension graphic-box__dimension--ethereum-sticker"
+                        src="https://media3.giphy.com/media/Wln5bjJE2sdC7VosFI/giphy.gif?cid=ecf05e47ix8jhhi1fz6jmds1bi83neh92wki73go5fs5gdi1&rid=giphy.gif&ct=s"
+                        alt="ethereum animated sticker">
+                    <img class="graphic-box__dimension graphic-box__dimension--cardano-sticker"
+                        src="https://media4.giphy.com/media/lBTF4mHzce4mfZupmm/giphy.gif?cid=ecf05e47b5skn1og5r8moy01lebghlegrdxzqf2jqa7fuj4e&rid=giphy.gif&ct=s"
+                        alt="cardano animated sticker">
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <main>
+
+
+
+        <!-- FEATURES SECTION -->
+        <section class="features-section">
+            <div class="row">
+
+                <div class="u-center-text u-margin-bottom-small">
+                    <h2 class="heading-secondary">
+                    <!-- <h2> because only one <h1> for the whole page -->
+                        Invest & Grow your cryptocurrency portfolio
+                    </h2>
+                </div>
+                
+                <div class="u-center-text  u-margin-bottom-large">
+                    <p class="section-text">
+                    <!-- New font text to be used all over the page -->
+                        CoinSurf eases out cryptocurrency trading. Using our beginner friendly platform, one can easily buy and sell
+                        Cryptocurrencies and NFTs. Start you crypto journey with us to join one of the most trusted name of this
+                        industry.
+                    </p>
+                </div>
+                
+                <div class="column-1-of-4">
+                        <div class="features-box">
+                            <div class="features-box__image-box u-margin-bottom-small">
+                                <img class="features-box__image" src="images/features/account/account.png"
+                                    alt="Simple user icon">
+                            </div>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Singup</h3>
+                            <p class="section-text">Create an account in minutes and quickly transfer funds with free deposits</p>
+                        </div>
+                </div>
+                
+                <div class="column-1-of-4">
+                        <div class="features-box">
+                            <div class="features-box__image-box u-margin-bottom-small">
+                                <img class="features-box__image" src="images/features/crypto/crypto.png"
+                                    alt="Bitcoin and world wide web icon">
+                            </div>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Invest</h3>
+                            <p class="section-text">Instantly buy a number of crypto assets with low 0.2% trading fees</p>
+                        </div>
+                </div>
+                
+                <div class="column-1-of-4">
+                        <div class="features-box">
+                            <div class="features-box__image-box u-margin-bottom-small">
+                                <img class="features-box__image" src="images/features/profit/profit.png"
+                                    alt="Trading graph vector">
+                            </div>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Trade</h3>
+                            <p class="section-text">Buy, sell and trade on our secure exchange and track your portfolio’s growth
+                            </p>
+                        </div>
+                </div>
+                
+                <div class="column-1-of-4">
+                        <div class="features-box">
+                            <div class="features-box__image-box u-margin-bottom-small">
+                                <img class="features-box__image" src="images/features/nft/nft.png" alt="NFT vector">
+                            </div>
+                            <h3 class="heading-tertiary u-margin-bottom-small">NFTs</h3>
+                            <p class="section-text">You can also buy and sell NFTs on our decentralised platform</p>
+                        </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- STATS SECTION -->
+        <section class="stats-section">
+            <div class="u-center-text">
+                <div class="row">
+                
+                    <div class="column-1-of-3">
+                        <h1 class="heading-primary--main">₹135B+</h1>
+                        <p class="section-text">Monthly volume traded</p>
+                    </div>
+                
+                    <div class="column-1-of-3">
+                        <h1 class="heading-primary--main">75+</h1>
+                        <p class="section-text">Coins</p>
+                    </div>
+                
+                    <div class="column-1-of-3">
+                        <h1 class="heading-primary--main">50M+</h1>
+                        <p class="section-text">Verifed users</p>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section">
+
+            <div class="row">
+
+                <div class="u-center-text u-margin-bottom-small">
+                    <h2 class="heading-secondary">
+                        The most secured cryptocurrency platform
+                    </h2>
+                </div>
+
+                <div class="u-center-text u-margin-bottom-large">
+                    <p class="section-text">
+                        We’ve left no stone unturned to make CoinSurf India’s most secure exchange.     We’re investing in regular security audits to ensure a highly secured trading   platform for India.
+                        Here are a few reasons why you should choose CoinSurf.
+                    </p>
+                </div>
+
+                <div class="column-1-of-3">
+                    <div class="about-box">
+                        <div class="about-box__side about-box__side--front">
+                            <div class="about-box__front-dimension">
+                                <div class="about-box__image-box u-margin-bottom-small">
+                                    <img class="about-box__image" src="images/about/shield/shield.png" alt="">
+                                </div>
+                                <h3 class="heading-tertiary">
+                                    Highly Secure Storage
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="about-box__side about-box__side--back">
+                            <div class="about-box__back-dimension">
+                                <h3 class="heading-tertiary">Vast majority of the digital assets in secure multi-sig cold wallets.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column-1-of-3">
+                    <div class="about-box">
+                        <div class="about-box__side about-box__side--front">
+                            <div class="about-box__front-dimension">
+                                <div class="about-box__image-box u-margin-bottom-small">
+                                    <img class="about-box__image" src="images/about/encryption/encryption.png" alt="">
+                                </div>
+                                <h3 class="heading-tertiary">
+                                    Deep Encryption
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="about-box__side about-box__side--back">
+                            <div class="about-box__back-dimension">
+                                <h3 class="heading-tertiary">All data is encrypted to secure your
+                                    passwords & personal data.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column-1-of-3">
+                    <div class="about-box">
+                        <div class="about-box__side about-box__side--front">
+                            <div class="about-box__front-dimension">
+                                <div class="about-box__image-box u-margin-bottom-small">
+                                    <img class="about-box__image" src="images/about/insurance/insurance.png" alt="">
+                                </div>
+                                <h3 class="heading-tertiary">
+                                    Protected by Insurance
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="about-box__side about-box__side--back">
+                            <div class="about-box__back-dimension">
+                                <h3 class="heading-tertiary">All funds are insured by LIC to give
+                                    you complete safety.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="u-center-text">
+                <button class="btn btn--button btn--blue" href="#">Learn more</button>
+            </div>
+
+        </section>
+
+
+
+        <!-- REVIEW SECTION -->
+        <section class="review-section">
+
+            <div class="row">
+
+                <div class="u-center-text u-margin-bottom-large">
+                    <h2 class="heading-secondary">See what our <span class="colored-text">customers</span> have to <span class="colored-text">say!</span></h2>
+                </div>
+
+                <div class="column-1-of-2">
+                    <div class="tweet-box">
+                        
+                        <div class="tweet-box__info-box u-margin-bottom-small">
+                            <div class="tweet-box__image-box">
+                                <img class="tweet-box__user-image" src="images/review/sample-1-girl/sample-1-girl.jpg" alt="Sample girl image 1">
+                            </div>
+                            <div class="tweet-box__username-box">
+                                <p class="section-text">@Ritikaaa</p>
+                                <p class="section-text">Ritika Tiwari</p>
+                            </div>
+                            <div class="tweet-box__twitter-logo">
+                                <img class="tweet-box__twitter-image" src="images/review/twitter/twitter.png"
+                                    alt="Twitter logo representing blue colored vector bird art">
+                            </div>
+                        </div>
+
+                        <div class="tweet-box__tweet-text">
+                            <p class="section-text">
+                                CoinSurf is a well-known cryptocurrency exchange that makes it easy to buy, sell, and exchange cryptocurrencies and
+                                NFTs. CoinSurf
+                                makes buying Bitcoin as easy as buying a stock through an online brokerage.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="column-1-of-2">
+                    <div class="tweet-box">
+
+                        <div class="tweet-box__info-box u-margin-bottom-small">
+                            <div class="tweet-box__image-box">
+                                <img class="tweet-box__user-image" src="images/review/sample-2-boy/sample-2-boy.jpg" alt="Sample boy image 2">
+                            </div>
+                            <div class="tweet-box__username-box">
+                                <p class="section-text">@RahuLS</p>
+                                <p class="section-text">Rahul Singh</p>
+                            </div>
+                            <div class="tweet-box__twitter-logo">
+                                <img class="tweet-box__twitter-image" src="images/review/twitter/twitter.png"
+                                    alt="Twitter logo representing blue colored vector bird art">
+                            </div>
+                        </div>
+
+                        <div class="tweet-box__tweet-text">
+                            <p class="section-text">
+                                CoinSurf has one of the lowest trading fees/commissions among the Indian-based cryptocurrency trading platforms. Also
+                                apart from crypto we can also purchase NFTs.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="column-1-of-2">
+                    <div class="tweet-box">
+                
+                        <div class="tweet-box__info-box u-margin-bottom-small">
+                            <div class="tweet-box__image-box">
+                                <img class="tweet-box__user-image" src="images/review/sample-3-boy/sample-3-boy.jpg" alt="Sample boy image 3">
+                            </div>
+                            <div class="tweet-box__username-box">
+                                <p class="section-text">@Ayushmxxn</p>
+                                <p class="section-text">Ayushmaan Patel</p>
+                            </div>
+                            <div class="tweet-box__twitter-logo">
+                                <img class="tweet-box__twitter-image" src="images/review/twitter/twitter.png"
+                                    alt="Twitter logo representing blue colored vector bird art">
+                            </div>
+                        </div>
+                
+                        <div class="tweet-box__tweet-text">
+                            <p class="section-text">
+                                CoinSurf offers relatively low trading fees and a wide selection of cryptocurrencies for trade globally, also it has
+                                a built-in digital wallet available.
+                            </p>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="column-1-of-2">
+                    <div class="tweet-box">
+                
+                        <div class="tweet-box__info-box u-margin-bottom-small">
+                            <div class="tweet-box__image-box">
+                                <img class="tweet-box__user-image" src="images/review/sample-4-girl/sample-4-girl.jpg" alt="Sample girl image 4">
+                            </div>
+                            <div class="tweet-box__username-box">
+                                <p class="section-text">@LouisWillly</p>
+                                <p class="section-text">Louis Wilson</p>
+                            </div>
+                            <div class="tweet-box__twitter-logo">
+                                <img class="tweet-box__twitter-image" src="images/review/twitter/twitter.png"
+                                    alt="Twitter logo representing blue colored vector bird art">
+                            </div>
+                        </div>
+                
+                        <div class="tweet-box__tweet-text">
+                            <p class="section-text">
+                                It's great for the newbie users, I used it to buy cryptocurrencies
+                                like bitcoin, ethereum, polygon etc. It's also available as a mobile application. The unique features of Coinsurf is it's help and support service.
+                            </p>
+                        </div>
+                
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="u-center-text">
+                <a class="btn btn--button btn--light-blue" href="#">Read more</a>
+            </div>
+
+        </section>
+
+
+
+        <!-- CTA SECTION -->
+        <section class="cta-section">
+            <div class="row">
+                <div class="gradient-box">
+
+                    <div class="u-center-text u-margin-bottom-large">
+                        <h2 class="heading-secondary">
+                            Get started and earn up to ₹200 worth of crypto
+                        </h2>
+                    </div>
+
+                    <form action="#" class="form u-margin-bottom-large">
+
+                        <!--*********************************************************************-->
+                        <div class="form__group-left">
+
+                            <div class="form__image-box form__image-box--left">
+                                <img class="form__image" src="images/cta/cta-image-1/cta-image-1.png" alt="Robot vector image">
+                            </div>
+
+                            <div class="form__text-box form__text-box--left">
+
+                                <div class="u-margin-bottom-small">
+
+                                    <input class="form__radio-input" type="radio" id="radio-button-1" name="radio-button">
+
+                                    <label class="form__radio-label" for="radio-button-1">
+                                        <span class="form__radio-button"></span>
+                                        <h3 class="heading-tertiary">
+                                            New to crypto? No problem.
+                                        </h3>
+                                    </label>
+
+                                </div>
+
+                                <p class="section-text">
+                                    Our crypto guides will help get you up to speed.
+                                    Our resource center will help guide you through the basics of trading crypto and how it's changing the way the world
+                                    thinks about money and finance.
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <!--*********************************************************************-->
+                        <div class="form__group-right">
+
+                            <div class="form__text-box form__text-box--right">
+
+                                <div class="u-margin-bottom-small">
+
+                                    <input class="form__radio-input" type="radio" id="radio-button-2" name="radio-button">
+
+                                    <label class="form__radio-label" for="radio-button-2">
+                                        <span class="form__radio-button"></span>
+                                        <h3 class="heading-tertiary">
+                                            CoinSurf has everything
+                                        </h3>
+                                    </label>
+
+                                </div>
+
+                                <p class="section-text">
+                                    An intuitive experience from the start.
+                                    From day one, we designed and built a streamlined bitcoin exchange for newcomers and experts alike.
+                                </p>
+
+                            </div>
+
+                            <div class="form__image-box form__image-box--right">
+                                <img class="form__image" src="images/cta/cta-image-2/cta-image-2.png" alt="Vector art of girl using a laptop">
+                            </div>
+
+                        </div>
+                        <!--*********************************************************************-->
+                        <div class="form__group-left">
+
+                            <div class="form__image-box form__image-box--left">
+                                <img class="form__image" src="images/cta/cta-image-3/cta-image-3.png" alt="Two person trading">
+                            </div>
+
+                            <div class="form__text-box form__text-box--left">
+
+                                <div class="u-margin-bottom-small">
+
+                                    <input class="form__radio-input" type="radio" id="radio-button-3" name="radio-button">
+
+                                    <label class="form__radio-label" for="radio-button-3">
+                                        <span class="form__radio-button"></span>
+                                        <h3 class="heading-tertiary">
+                                            Trade with confidence
+                                        </h3>
+                                    </label>
+
+                                </div>
+
+                                <p class="section-text">
+                                    Our platform provides world class financial stability by maintaining full reserves, healthy banking relationships and
+                                    the highest standards of legal compliance.
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <!--*********************************************************************-->
+                        <div class="form__group-right">
+
+                            <div class="form__text-box form__text-box--right">
+
+                                <div class="u-margin-bottom-small">
+
+                                    <input class="form__radio-input" type="radio" id="radio-button-4" name="radio-button">
+
+                                    <label class="form__radio-label" for="radio-button-4">
+                                        <span class="form__radio-button"></span>
+                                        <h3 class="heading-tertiary">
+                                            Get help 24/7
+                                        </h3>
+                                    </label>
+
+                                </div>
+
+                                <p class="section-text">
+                                    We pair our global 24/7/365 live chat with an extensive Support Center to help ensure your questions are answered and your needs are met around the clock -- no matter who or where you are.
+                                </p>
+
+                            </div>
+
+                            <div class="form__image-box form__image-box--right">
+                                <img class="form__image" src="images/cta/cta-image-4/cta-image-4.png" alt="Customer support agent vector art">
+                            </div>
+
+                        </div>
+                        <!--*********************************************************************-->
+
+                    </form>
+                    
+                    <div class="u-center-text">
+                        <button class="btn btn--button btn--blue" href="#">Get Started Today</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="footer-section">
+            <div class="row">
+                <!--*********************************************************************-->
+                <div class="column-1-of-4">
+                    <div class="footer-section__box">
+
+                        <div class="footer-section__brand-box u-margin-bottom-small">
+                            <h1 class="footer-section__brand-logo">CoinSurf</h1>
+                            <!-- Using logo's class -->
+                        </div>
+
+                        <div class="footer-section__text-box u-margin-bottom-small">
+                            <p class="section-text">
+                                CoinSurf is a frontend project by 
+                                <a class="btn footer-section__link" 
+                                    href="#footer">
+                                Jyotirmay Patel &darr;</a>
+                            </p>
+                        </div>
+
+                        <div class="footer-section__text-box">
+                            <p class="section-text">
+                                Copyright &copy; 2022 CoinSurf
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--*********************************************************************-->
+                <div class="column-1-of-4">
+                    <div class="footer-section__box">
+
+                        <div class="footer-section__brand-box">
+                            <h3 class="footer-section__brand-logo">Company</h3>
+                        </div>
+
+                        <div class="footer-section__text-box">
+                            <ul class="footer-section__list">
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Careers
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Affiliates
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Press
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Legal & Privacy
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Cookie Policy
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Cookie Prefrences
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!--*********************************************************************-->
+                <div class="column-1-of-4">
+                    <div class="footer-section__box">
+
+                        <div class="footer-section__brand-box">
+                            <h3 class="footer-section__brand-logo">Support</h3>
+                        </div>
+                        
+                        <div class="footer-section__text-box">
+                            <ul class="footer-section__list">
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Help Cener
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Create Account
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        ID Verification
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Account Verification
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Payment Methods
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Account Access
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Supported Crypto
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!--*********************************************************************-->
+                <div class="column-1-of-4">
+                    <div class="footer-section__box">
+
+                        <div class="footer-section__brand-box">
+                            <h3 class="footer-section__brand-logo">Learn</h3>
+                        </div>
+                        
+                        <div class="footer-section__text-box">
+                            <ul class="footer-section__list">
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Browse Crypto Prices
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Newsletter
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Crypto Basics
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Tips & Tutorials
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Market Updates
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        What Is Bitcoin?
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        What Is Blockchain?
+                                    </a>
+                                </li>
+                                <li class="footer-section__item">
+                                    <a class="btn footer-section__link" href="#">
+                                        Taxes
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!--*********************************************************************-->
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- FOOTER-->
+    <footer id="footer" class="footer">
+        <div class="row">
+
+            <div class="column-1-of-2">
+                <div class="footer__box footer__box--1">
+
+                    <h1 class="heading-primary--main u-margin-bottom-small">
+                        CoinSurf
+                    </h1>
+                    <h3 class="heading-tertiary">
+                        A Front-End Project
+                    </h3>
+
+                </div>
+            </div>
+
+            <div class="column-1-of-2">
+                <div class="footer__box footer__box--2">
+
+                    <h1 class="heading-primary--main u-margin-bottom-small">
+                        Built by <span>Jyotirmay Patel</span>
+                    </h1>
+
+                    <p class="section-text u-margin-bottom-small">
+                        Copyright &copy; Jyotirmay Patel 2022
+                    </p>
+
+                    <div class="footer__icon-box">
+                        <a href="https://www.linkedin.com/in/jyotirmay-patel/" target="_blank" class="footer__icons">
+                            <i class="fa-brands fa-linkedin fa-6x"></i>
+                        </a>
+                        <a href="https://github.com/jyotirmayyy" target="_blank" class="footer__icons">
+                            <i class="fa-brands fa-github fa-6x "></i>
+                        </a>
+                        <a href="https://twitter.com/Jyotirmayyy" target="_blank" class="footer__icons">
+                            <i class="fa-brands fa-twitter fa-6x"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
