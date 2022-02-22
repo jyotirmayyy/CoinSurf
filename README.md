@@ -22,6 +22,8 @@ https://jyotirmayyy.github.io/CoinSurf/
  - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
  - [81 types of dark blue](https://simplicable.com/new/dark-blue)
  - [Poppins](https://fonts.google.com/specimen/Poppins#glyphs)
+ - [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/)
+
 
 
 ## Contributing
