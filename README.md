@@ -10,6 +10,9 @@ I've used a blue-colored theme as it represents stability, trust, and serenity w
 
 https://jyotirmayyy.github.io/CoinSurf/
 
+## Screenshot
+![CoinSurf-screenshot](https://user-images.githubusercontent.com/59317504/158420666-d57096d3-4c52-4962-b2ad-4321eae8c00c.png)
+
 ## Authors
 
 - [@jyotirmayyy](https://github.com/jyotirmayyy)
