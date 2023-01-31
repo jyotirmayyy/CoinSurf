@@ -40,12 +40,12 @@ You are 100% allowed to use this webpage for personal use, but NOT to claim it a
 
 ## Support
 
-For any queries, email jp90010@gmail.com or ping a tweet [@Jyotirmayyy](https://twitter.com/Jyotirmayyy).
+For any queries, ping a tweet [@Jyotirmayyy](https://twitter.com/Jyotirmayyy).
 
 
 ## Feedback
 
-If you have any feedback, please reach out to me at jp90010@gmail.com
+If you have any feedback, please reach out to me [@Jyotirmayyy](https://twitter.com/Jyotirmayyy) at Twitter.
 
 
 # Hi, I'm Jyotirmay! 👋
